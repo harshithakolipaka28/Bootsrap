@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+</head>
+<body>
+  <div class="all-content">
+   
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" id="logo"><img src="./images/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#product">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallary">Gallary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        
+      
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
+
+<!-- home section -->
+   <section id="home">
+    <div class="content">
+      <h3><i>A good coffee makes a great day </h3>
+      <p>Boost your Productivity and ,<br>
+        Build your mood with a Cup of coffee </i>
+         
+      </p>
+      <button id="btn">Shop Now</button>
+    </div>
+   </section>
+
+<!-- home section -->
+
+
+
+<!-- about section -->
+<div class="about" id="about">
+  <div class="container">
+  <div class="heading">About <span>Us</span></div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <img src="data:image/jpeg;base64,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" alt="">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3>What Makes Our Coffee Special?</h3>
+        <p>We are a friendly neighbourhood coffee shop, in Hyderabad, offering high quality freshly brewed specialty coffee such as espresso based hot and cold coffees,
+          <br> and also manual brews like pour overs, cold brews, french press, and filter coffee. 
+          <br><br>Our coffee beans used for the majority of our espresso based coffees have a medium dark profile in
+          
+         </p>
+         <button id="about-btn">Learn More.</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- about section -->
+
+
+   
+
+
+
+<!-- top cards -->
+<section class="top-cards">
+  <div class="heading2">Top <span>Categories</span></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/c1.png" alt="">
+          
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/c2.png" alt="">
+          
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/c3.png" alt="">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- top cards -->
+
+<!-- menu -->
+<section class="menu" id="menu">
+  <div class="container">
+  <div class="heading3">Menu</div>
+</div>
+  <div class="container" id="container2">
+  <div class="row">
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/m1.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Coffee latte</h3>
+          <p>$99 <strike>$100</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/m2.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Latte</h3>
+          <p>$90 <strike>$110</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/m3.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Flat White</h3>
+          <p>$100 <strike>$200</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/m4.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Cappuccino</h3>
+          <p>$120 <strike>$150</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 50px;">
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/m5.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Coffee</h3>
+          <p>$200 <strike>$300</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/m6.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Black Coffee</h3>
+          <p>$30 <strike>$50</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/m7.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Flat White</h3>
+          <p>$100 <strike>$200</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/m8.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Coffee</h3>
+          <p>$120 <strike>$150</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- menu -->
+
+<!-- product -->
+<section id="product" class="product">
+  <div class="container">
+  <div class="heading4">Products</div>
+</div>
+  <div class="container" id="container3">
+
+    <div class="row">
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/arabica coffee.png" alt="">
+          <div class="card-body">
+            <h3>Arabic Coffee</h3>
+          <p>$120 <strike>$150</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/Cappuccino coffee.png" alt="">
+          <div class="card-body">
+            <h3>Cappuccino Coffee</h3>
+          <p>$250 <strike>$350</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/Black Coffee.png" alt="">
+          <div class="card-body">
+            <h3>Black Coffee</h3>
+          <p>$130 <strike>$150</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/Decaf caffee.png" alt="">
+          <div class="card-body">
+            <h3>Decaf Coffee</h3>
+          <p>$120 <strike>$150</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- product -->
+
+<!-- our gallary -->
+<div class="container" id="gallary">
+  <h1>Our <span>Gallary</span></h1>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/image1.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/image2.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/b1.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/image4.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/image5.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/image6.png" alt="">
+      </div>
+    </div>
+  </div>
+</div><br>
+</div>
+<!--------our gallery------>
+
+<!-- contact -->
+<section class="contact" id="contact">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+       <div class="heading6">Contact <span>Us</span></div>+
+
+       <input class="form-control" type="text" placeholder="Name" aria-label="default input example"><br>
+       <input class="form-control" type="email" placeholder="Email" aria-label="default input example"><br>
+       <input class="form-control" type="number" placeholder="Number" aria-label="default input example"><br>
+       <button id="contact-btn">Send Message</button>
+      </div>
+      <div class="col-md-5" id="col">
+        <h1>Info</h1>
+        <p><i class="fa-regular fa-envelope"></i> coffeeshop@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +9162737888</p>
+       <p><i class="fa-solid fa-building-columns"></i> Hyderabad</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- contact -->
+
+   <!-- footer -->
+   <footer id="footer">
+    <div class="footer-logo text-center"><img src="./images/logo.png" alt=""></div>
+    <div class="socail-links text-center">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+    </div>
+    <div class="credite text-center">
+        Designed By <a href="#"> coffee shop</a>
+    </div>
+    <div class="copyright text-center">
+      &copy; Copyright <strong><span>Coffee Shop</span></strong>. All Rights Reserved
+  </div>
+</footer>
+<!-- footer -->
+
+   <a href="#" class="arrow"><i><img src="./images/up-arrow.png" alt="" width="50px"></i></a>
+
+
+  </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
